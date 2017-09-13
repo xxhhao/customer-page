@@ -1,0 +1,19 @@
+.content{
+    padding: 2rem;
+}
+
+.left{
+    float: left;
+}
+
+.left ul{
+    margin: 10rem 1rem 1rem ;
+}
+
+.left li a{
+    padding: 2rem;
+}
+
+.right{
+    float: left;
+}
