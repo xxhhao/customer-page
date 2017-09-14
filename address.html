@@ -25,28 +25,99 @@
             <div class="right-content">
                 <!--<button class="btn btn-default btn-primary" type="submit" id="new">新增收货地址</button>-->
                 <p><span class="text-danger">新增收货地址</span>电话号码、手机号选填一项，其余均为必填项</p>
+                <div class="form-group">
+                    <label for="devision">所在地区</label>
+                    <i>*</i>
+                    <input type="text" id="devision" class="devision">
+                    <span>省</span>
+                    <input type="text" class="devision">
+                    <span>市</span>
+                    <input type="text" class="devision">
+                    <span>区</span>
+                </div>
+                <div class="form-group">
+                    <label for="street">详细地址</label>
+                    <i>*</i>
+                    <input type="text" id="street" placeholder="建议您如实填写收货地址。">
+                </div>
+                <div class="form-group">
+                    <label for="postcode">邮政编码</label>
+                    <input type="text" id="postcode">
+                </div>
+                <div class="form-group">
+                    <label for="name">收货人姓名</label>
+                    <i>*</i>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">手机号码</label>
+                    <input type="text" id="mobile" placeholder="手机号码、电话号码必须填一项">
+                </div>
+                <div class="form-group">
+                    <label for="phone">电话号码</label>
+                    <input type="text" id="phone" placeholder="区号" class="devision">
+                    <span>-</span>
+                    <input type="text" placeholder="电话号码" class="devision">
+                    <span>-</span>
+                    <input type="text" placeholder="分机" class="devision">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 设置为默认收货地址
+                    </label>
+                </div>
+                <button type="submit" class="btn" id="save">保存</button>
+                <p><span class="text-danger">已保存2条地址</p>
 
 
+                <!--<address>-->
+                    <!--<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                    <!--<strong>收货人姓名1</strong><br>-->
+                    <!--<span>广东省广州市越秀区</span><br>-->
+                    <!--<span>XXX街道</span><br>-->
+                    <!--<span>1234567890</span>-->
+                <!--</address>-->
+                <!--<address>-->
+                    <!--<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                    <!--<strong>收货人姓名2</strong><br>-->
+                    <!--<span>广东省广州市越秀区</span><br>-->
+                    <!--<span>XXX街道</span><br>-->
+                    <!--<span>1234567890</span>-->
+                <!--</address>-->
 
-
-
-
-
-
-                <address>
-                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <strong>收货人姓名1</strong><br>
-                    <span>广东省广州市越秀区</span><br>
-                    <span>XXX街道</span><br>
-                    <span>1234567890</span>
-                </address>
-                <address>
-                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <strong>收货人姓名2</strong><br>
-                    <span>广东省广州市越秀区</span><br>
-                    <span>XXX街道</span><br>
-                    <span>1234567890</span>
-                </address>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>收货人</th>
+                            <th>所在地区</th>
+                            <th>详细地址</th>
+                            <th>邮编</th>
+                            <th>手机/电话</th>
+                            <th>操作</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>aaa</td>
+                            <td>广东省广州市越秀区</td>
+                            <td>XXX街道</td>
+                            <td>000000</td>
+                            <td>13400000000</td>
+                            <td><a href="#">修改</a><a href="#">删除</a></td>
+                            <td><button class="btn btn-danger" style="font-size: 10px">默认地址</button></td>
+                        </tr>
+                        <tr>
+                            <td>aaa</td>
+                            <td>广东省广州市越秀区</td>
+                            <td>XXX街道</td>
+                            <td>000000</td>
+                            <td>13400000000</td>
+                            <td><a href="#">修改</a><a href="#">删除</a></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 </body>
