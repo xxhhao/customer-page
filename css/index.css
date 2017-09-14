@@ -61,7 +61,7 @@ html{
 .right-content .list-group .money{
     float: right;
     width: 15%;
-    border: solid 1px #000;
+    /*border: solid 1px #000;*/
 }
 
 
@@ -106,4 +106,8 @@ html{
 .page-right .right-content address{
     border: solid 1px #000;
     padding: 15px;
+}
+
+.page-right .right-content .close{
+    float: right;
 }
