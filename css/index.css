@@ -62,3 +62,30 @@ html{
     width: 20%;
     border: solid 1px #000;
 }
+
+
+/*.right-content .item{*/
+    /*margin: 2px 2px 20px 2px;*/
+    /*clear: both;*/
+
+/*}*/
+
+/*.right-content .item p{*/
+    /*float: left;*/
+    /*text-align: right;*/
+    /*width: 100px;*/
+/*}*/
+
+/*.right-content .item input{*/
+    /*float: left;*/
+    /*display: inline-block;*/
+/*}*/
+
+.right-content .form-group label{
+    width: 100px;
+    text-align: right;
+}
+
+.right-content .form-group select{
+    height: 25px;
+}
