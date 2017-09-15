@@ -93,10 +93,10 @@
     /*display: inline-block;*/
 /*}*/
 
-.right-content .form-group label{
-    width: 60px;
-    text-align: right;
-}
+/*.right-content .form-group label{*/
+    /*width: 60px;*/
+    /*text-align: right;*/
+/*}*/
 
 .right-content .form-group select{
     height: 25px;
@@ -104,54 +104,54 @@
 
 #confirm{
     position: relative;
-    left: 50px;
+    left: 80px;
     top: 10px;
     font-size: 12px;
 }
 
 #cancel{
     position: relative;
-    left: 100px;
+    left: 130px;
     top: 10px;
     font-size: 12px;
 }
 
-.right-content address{
-    border: solid 1px #c5c5c5;
-    padding: 15px;
-}
+/*.right-content address{*/
+    /*border: solid 1px #c5c5c5;*/
+    /*padding: 15px;*/
+/*}*/
 
-.right-content .close{
-    float: right;
-}
+/*.right-content .close{*/
+    /*float: right;*/
+/*}*/
 
 .right-title{
     margin: 10px 0;
     font-size: 12px;
 }
 
-#new{
-    position: relative;
-    margin-bottom: 20px;
-    font-size: 12px;
-}
+/*#new{*/
+    /*position: relative;*/
+    /*margin-bottom: 20px;*/
+    /*font-size: 12px;*/
+/*}*/
 
 .page{
     float: right;
     margin-bottom: -20px;
 }
 
-.photo{
-    position: absolute;
-    right: 10px;
+/*.photo{*/
+    /*position: absolute;*/
+    /*right: 10px;*/
 
-}
+/*}*/
 
 #photo{
     width: 15%;
     /*display: block;*/
-    position: absolute;
-    right: 250px;
+    /*position: absolute;*/
+    /*right: 250px;*/
     background-color: #fff;
 }
 
@@ -205,30 +205,41 @@ i{
     background-color: red;
 }
 
-.street label{
-    /*position: absolute;*/
-    /*top: 100px;*/
-    float: left;
-}
+/*.street label{*/
+    /*/!*position: absolute;*!/*/
+    /*/!*top: 100px;*!/*/
+    /*float: left;*/
+/*}*/
 
-.street i{
-    float: left;
-    margin: 0 3px;
-}
+/*.street i{*/
+    /*float: left;*/
+    /*margin: 0 3px;*/
+/*}*/
 
 .male{
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
-    width: 20px;
+    /*width: 20px;*/
     margin: 0;
 }
 
 .female{
     display: inline-block;
-    margin: 0;
+    margin: 0 0 0 10px;
 }
 
 #street{
     padding: 3px;
 }
 
+.form-horizontal .control-label{
+    padding-top: px;
+}
+
+.form-horizontal .radio{
+    padding-top: 0;
+}
+
+.col-sm-10{
+    left: -20px;
+}

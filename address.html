@@ -25,42 +25,53 @@
             <div class="right-content">
                 <!--<button class="btn btn-default btn-primary" type="submit" id="new">新增收货地址</button>-->
                 <p><span class="text-danger">新增收货地址</span>电话号码、手机号选填一项，其余均为必填项</p>
-                <div class="form-group">
-                    <label for="devision">所在地区</label>
-                    <i>*</i>
-                    <input type="text" id="devision" class="devision">
-                    <span>省</span>
-                    <input type="text" class="devision">
-                    <span>市</span>
-                    <input type="text" class="devision">
-                    <span>区</span>
-                </div>
-                <div class="form-group street">
-                    <label for="street">详细地址</label>
-                    <i>*</i>
-                    <textarea id="street" rows="5" cols="38" placeholder="建议您如实填写收货地址。"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="postcode">邮政编码</label>
-                    <input type="text" id="postcode">
-                </div>
-                <div class="form-group">
-                    <label for="name">收货人姓名</label>
-                    <i>*</i>
-                    <input type="text" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="mobile">手机号码</label>
-                    <input type="text" id="mobile" placeholder="手机号码、电话号码必须填一项">
-                </div>
-                <div class="form-group">
-                    <label for="phone">电话号码</label>
-                    <input type="text" id="phone" placeholder="区号" class="devision">
-                    <span>-</span>
-                    <input type="text" placeholder="电话号码" class="devision">
-                    <span>-</span>
-                    <input type="text" placeholder="分机" class="devision">
-                </div>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="devision" class="col-sm-2 control-label">所在地区<i>*</i></label>
+                        <div class="col-sm-10">
+                            <input type="text" id="devision" class="devision">
+                            <span>省</span>
+                            <input type="text" class="devision">
+                            <span>市</span>
+                            <input type="text" class="devision">
+                            <span>区</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="street" class="col-sm-2 control-label">详细地址<i>*</i></label>
+                        <div class="col-sm-10">
+                            <textarea id="street" rows="5" cols="38" placeholder="建议您如实填写收货地址。"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="postcode" class="col-sm-2 control-label">邮政编码</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="postcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">收货人姓名<i>*</i></label>
+                        <div class="col-sm-10">
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile" class="col-sm-2 control-label">手机号码</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="mobile" placeholder="手机号码、电话号码必须填一项">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">电话号码</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="phone" placeholder="区号" class="devision">
+                            <span>-</span>
+                            <input type="text" placeholder="电话号码" class="devision">
+                            <span>-</span>
+                            <input type="text" placeholder="分机" class="devision">
+                        </div>
+                    </div>
+                </form>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox"> 设置为默认收货地址
