@@ -185,10 +185,10 @@ i{
     width: 70px;
 }
 
-#street{
-    width: 270px;
-    height: 100px;
-}
+/*#street{*/
+    /*width: 270px;*/
+    /*height: 100px;*/
+/*}*/
 
 #mobile{
     width: 180px;
@@ -204,3 +204,31 @@ i{
     color: #fff;
     background-color: red;
 }
+
+.street label{
+    /*position: absolute;*/
+    /*top: 100px;*/
+    float: left;
+}
+
+.street i{
+    float: left;
+    margin: 0 3px;
+}
+
+.male{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    margin: 0;
+}
+
+.female{
+    display: inline-block;
+    margin: 0;
+}
+
+#street{
+    padding: 3px;
+}
+
