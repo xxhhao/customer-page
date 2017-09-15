@@ -46,6 +46,7 @@
     padding: 20px;
     background-color: #f5f5f5;
     font-size: 12px;
+    border: 1px solid #d5d5d5;
 }
 
 .right-content .list-group img{
@@ -233,7 +234,7 @@ i{
 }
 
 .form-horizontal .control-label{
-    padding-top: px;
+    padding-top: 0;
 }
 
 .form-horizontal .radio{
