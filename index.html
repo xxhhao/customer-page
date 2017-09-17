@@ -30,8 +30,23 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="header">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">我的订单 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="customer.html">个人信息</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的订单<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">全部订单</a></li>
+                            <li><a href="none-paid.html">待付款</a></li>
+                            <li><a href="#">待收货</a></li>
+                            <li><a href="#">待评价</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人信息<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="customer.html">基本信息</a></li>
+                            <li><a href="#">头像照片</a></li>
+                            <li><a href="#">更多个人信息</a></li>
+                        </ul>
+                    </li>
                     <li><a href="address.html">收货地址</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -40,44 +55,9 @@
 
     <!--详情面-->
     <div class="content clearfix">
-        <div class="right-title">
-            <ul class="nav nav-tabs nav">
-                <li class="active"><a href="#">全部订单</a></li>
-                <li><a href="none-paid.html">待付款</a></li>
-                <li><a href="#">待收货</a></li>
-                <li><a href="#">待评价</a></li>
-            </ul>
-        </div>
         <div class="right-content clearfix">
             <div class="list-group">
                 <h5 class="list-group-item-heading list-group-item ">订单号XXXXXXXX</h5>
-                <!--<div class="list-group-item clearfix">-->
-                    <table class="table table-bordered">
-                        <tr>
-                            <td class="ver-middle">
-                                <img src="img/goods.png">
-                            </td>
-                            <td>
-                                tttt商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1
-                            </td>
-                            <td class="ver-middle">
-                                已完成
-                            </td>
-                            <td class="ver-middle">
-                                总金额<br>￥100
-                            </td>
-                            <td class="ver-middle">
-                                <a href="#">去评价</a>
-                            </td>
-                        </tr>
-                    </table>
-                    <!--<img src="img/goods.png">-->
-                    <!--<div class="summary">商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1</div>-->
-                    <!--<div class="money">总金额<br>￥100</div>-->
-                <!--</div>-->
-            </div>
-            <div class="list-group">
-                <h5 class="list-group-item-heading list-group-item ">订单号XXXXXXXX</h5>
                 <table class="table table-bordered">
                     <tr>
                         <td class="ver-middle">
@@ -97,52 +77,81 @@
                         </td>
                     </tr>
                 </table>
-            </div>
-            <div class="list-group">
-                <h5 class="list-group-item-heading list-group-item ">订单号XXXXXXXX</h5>
-                <table class="table table-bordered">
-                    <tr>
-                        <td class="ver-middle">
-                            <img src="img/goods.png">
-                        </td>
-                        <td>
-                            tttt商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1
-                        </td>
-                        <td class="ver-middle">
-                            已完成
-                        </td>
-                        <td class="ver-middle">
-                            总金额<br>￥100
-                        </td>
-                        <td class="ver-middle">
-                            <a href="#">去评价</a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="page">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </div>
-
+    <div class="content clearfix">
+        <div class="right-content clearfix">
+            <div class="list-group">
+                <h5 class="list-group-item-heading list-group-item ">订单号XXXXXXXX</h5>
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="ver-middle">
+                            <img src="img/goods.png">
+                        </td>
+                        <td>
+                            tttt商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1
+                        </td>
+                        <td class="ver-middle">
+                            已完成
+                        </td>
+                        <td class="ver-middle">
+                            总金额<br>￥100
+                        </td>
+                        <td class="ver-middle">
+                            <a href="#">去评价</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="right-content clearfix">
+            <div class="list-group">
+                <h5 class="list-group-item-heading list-group-item ">订单号XXXXXXXX</h5>
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="ver-middle">
+                            <img src="img/goods.png">
+                        </td>
+                        <td>
+                            tttt商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1商品1
+                        </td>
+                        <td class="ver-middle">
+                            已完成
+                        </td>
+                        <td class="ver-middle">
+                            总金额<br>￥100
+                        </td>
+                        <td class="ver-middle">
+                            <a href="#">去评价</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--<div class="page">-->
+        <!--<nav aria-label="Page navigation">-->
+            <!--<ul class="pagination">-->
+                <!--<li>-->
+                    <!--<a href="#" aria-label="Previous">-->
+                        <!--<span aria-hidden="true">&laquo;</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li><a href="#">1</a></li>-->
+                <!--<li><a href="#">2</a></li>-->
+                <!--<li><a href="#">3</a></li>-->
+                <!--<li><a href="#">4</a></li>-->
+                <!--<li><a href="#">5</a></li>-->
+                <!--<li>-->
+                    <!--<a href="#" aria-label="Next">-->
+                        <!--<span aria-hidden="true">&raquo;</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</nav>-->
+    <!--</div>-->
 </body>
 </html>
