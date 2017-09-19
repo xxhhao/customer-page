@@ -194,6 +194,8 @@ thead{
     margin-right: 30px;
 }
 
-.text-danger{
+.tips{
     display: none;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
