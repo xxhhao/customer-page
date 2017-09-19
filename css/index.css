@@ -193,3 +193,7 @@ thead{
     float: right;
     margin-right: 30px;
 }
+
+.text-danger{
+    display: none;
+}
