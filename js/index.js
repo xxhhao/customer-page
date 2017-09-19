@@ -8,7 +8,14 @@ $(function(){
         email();
     });
 
+    $("#save").click(function(){
+        receive();
+        phone();
+    });
+
     $(".check").blur(function(){
+        receive();
+        phone();
         name();
         realname();
         telphone();
@@ -38,14 +45,14 @@ $(function(){
             ch1.next().show();
             ch1.next().text("请输入姓名");
         }
-        else if(ch1.val().length<=6) {
-            ch1.parent().removeClass("has-error");
-            ch1.next().hide();
-        }
         else if(ch1.val().length>6){
             ch1.parent().addClass("has-error");
             ch1.next().show();
             ch1.next().text("不能超过6个字");
+        }
+        else{
+            ch1.parent().removeClass("has-error");
+            ch1.next().hide();
         }
     }
 
@@ -73,5 +80,27 @@ $(function(){
         else{
             ch1.parent().removeClass("has-error");
             ch1.next().hide();
+        }
+    }
+
+    function receive(){
+        var ch2=$("#receive");
+        if(ch2.val()==""){
+            ch2.parent().addClass("has-error");
+            ch2.parent().focus()
+        }
+        else{
+            ch2.parent().removeClass("has-error");
+        }
+    }
+
+    function phone(){
+        var ch2=$("#phone");
+        if(ch2.val()=="") {
+            ch2.parent().addClass("has-error");
+            ch2.parent().focus();
+        }
+        else{
+            ch2.parent().removeClass("has-error");
         }
     }
