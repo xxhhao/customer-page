@@ -1,6 +1,6 @@
 body{
     background: #e8e8e8;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .navbar{
@@ -79,13 +79,13 @@ i{
     color: red;
 }
 
-.right-content .form-group .devision{
-    width: 100px;
-    border-radius: 5px;
-    height: 34px;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-}
+/*.right-content .form-group .devision{*/
+    /*width: 100px;*/
+    /*border-radius: 5px;*/
+    /*height: 34px;*/
+    /*padding: 6px 12px;*/
+    /*border: 1px solid #ccc;*/
+/*}*/
 
 .checkbox{
     margin-left: 65px;
@@ -108,9 +108,7 @@ i{
     margin: 0 0 0 10px;
 }
 
-#street{
-    padding: 3px;
-}
+
 
 /*.form-horizontal .control-label{*/
     /*padding-top: 0;*/
