@@ -6,25 +6,31 @@ $(function(){
         realname();
         telphone();
         email();
+        check();
     });
 
     $("#save").click(function(){
         receive();
         phone();
         street();
+        check();
     });
 
-    $(".check").blur(function(){
-        receive();
-        street();
-        phone();
-        name();
-        realname();
-        telphone();
-        email();
-    });
 
 });
+
+    function check(){
+        $(".check").blur(function(){
+            receive();
+            street();
+            phone();
+            name();
+            realname();
+            telphone();
+            email();
+        });
+    }
+
 
     function name(){
         var ch1=$("#name");

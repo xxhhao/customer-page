@@ -1,18 +1,22 @@
 body{
     background: #e8e8e8;
+    font-size: 12px;
+}
+
+.navbar{
+    margin-bottom: 10px;
 }
 
 .content{
-    padding: 20px;
+    padding: 10px;
     background: #fff;
-    margin: 0 20px 20px 20px;
     border-radius: 10px;
 }
 
 .right-content{
-    padding: 20px 10px 0px 10px;
+    padding: 20px 10px 0 10px;
     background: #fff;
-    font-size: 12px;
+
     border: 1px solid #d5d5d5;
     border-radius: 10px;
 }
@@ -83,10 +87,6 @@ i{
     border: 1px solid #ccc;
 }
 
-/*#mobile{*/
-    /*width: 200px;*/
-/*}*/
-
 .checkbox{
     margin-left: 65px;
 }
@@ -112,16 +112,16 @@ i{
     padding: 3px;
 }
 
-.form-horizontal .control-label{
-    padding-top: 0;
-}
+/*.form-horizontal .control-label{*/
+    /*padding-top: 0;*/
+/*}*/
 
 .form-horizontal .radio{
-    padding-top: 0;
+    padding-top: 2px;
 }
 
 .col-sm-2{
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 thead{
@@ -134,7 +134,7 @@ thead{
 }
 
 .order-header ul{
-    margin: 10px;
+    margin: 0 7px;
 }
 
 .order-header ul li{
@@ -161,7 +161,9 @@ thead{
 }
 
 .order-item tbody tr td:first-child{
-    width: 150px;
+    /*max-width: 120px;*/
+    min-width: 80px;
+    width: 11%;
 }
 
 .order-item tbody tr td:nth-child(3){
@@ -179,8 +181,8 @@ thead{
 
 .order-item tfoot tr td span{
     position: relative;
-    left: 20px;
-    top: 8px;
+    left: 5px;
+    top: 3px;
 }
 
 .order-item tfoot tr td strong{
@@ -189,7 +191,7 @@ thead{
 }
 
 .order-item tfoot tr td div{
-    margin: 20px 0 10px 20px;
+    margin: 10px 0 0 5px;
 }
 
 .order-item tfoot tr td .eva{
@@ -201,4 +203,29 @@ thead{
     display: none;
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+#photo{
+    min-width: 70px;
+    width: 12%;
+}
+
+.dropdown-menu{
+    font-size: 11px;
+}
+
+.navbar-brand{
+    font-size: 26px;
+}
+
+.btn{
+    font-size: 12px;
+}
+
+input::-webkit-input-placeholder{
+    font-size: 12px;
+}
+
+textarea::-webkit-input-placeholder{
+    font-size: 12px;
 }
