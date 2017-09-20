@@ -3,8 +3,13 @@ body{
     font-size: 11px;
 }
 
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover{
+    color: #000;
+    background-color: #f8f8f8;
+}
+
 .navbar{
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .content{
@@ -227,3 +232,9 @@ input::-webkit-input-placeholder{
 textarea::-webkit-input-placeholder{
     font-size: 12px;
 }
+
+#sign-out{
+    position: absolute;
+    right: 15px;
+}
+
