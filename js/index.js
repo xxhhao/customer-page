@@ -11,10 +11,12 @@ $(function(){
     $("#save").click(function(){
         receive();
         phone();
+        street();
     });
 
     $(".check").blur(function(){
         receive();
+        street();
         phone();
         name();
         realname();
@@ -102,5 +104,16 @@ $(function(){
         }
         else{
             ch2.parent().removeClass("has-error");
+        }
+    }
+
+    function street(){
+        var ch2=$("#street");
+        if(ch2.val()==""){
+            ch2.parent().addClass("has-error");
+            ch2.parent().focus();
+        }
+        else{
+            ch2.parent().removeClass("has-error")
         }
     }
