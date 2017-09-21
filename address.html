@@ -58,95 +58,92 @@
     
     <!--详情面-->
     <div class="content clearfix">
-        <!--<h4>收货地址</h4>-->
-        <!--<div class="right-content">-->
-            <p><span class="text-danger">新增收货地址</span>带*号的均为必填项</p>
-            <form class="form-horizontal">
-                <!--<div class="form-group">-->
-                    <!--<label for="devision" class="col-sm-2 control-label">所在地区<i>*</i></label>-->
-                    <!--<div class="col-sm-10">-->
-                        <!--<input type="text" id="devision" class="devision">-->
-                        <!--<span>省</span>-->
-                        <!--<input type="text" class="devision">-->
-                        <!--<span>市</span>-->
-                        <!--<input type="text" class="devision">-->
-                        <!--<span>区</span>-->
-                    <!--</div>-->
+        <p><span class="text-danger">新增收货地址</span>带*号的均为必填项</p>
+        <form class="form-horizontal">
+            <!--<div class="form-group">-->
+                <!--<label for="devision" class="col-sm-2 control-label">所在地区<i>*</i></label>-->
+                <!--<div class="col-sm-10">-->
+                    <!--<input type="text" id="devision" class="devision">-->
+                    <!--<span>省</span>-->
+                    <!--<input type="text" class="devision">-->
+                    <!--<span>市</span>-->
+                    <!--<input type="text" class="devision">-->
+                    <!--<span>区</span>-->
                 <!--</div>-->
-                <div class="form-group">
-                    <label for="street" class="col-sm-2 control-label">详细地址<i>*</i></label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control check" id="street"
-                               placeholder="建议您如实填写收货地址。例如：XX省XX市XX区XX街道XX号XX房">
-                    </div>
+            <!--</div>-->
+            <div class="form-group">
+                <label for="street" class="col-sm-2 control-label">详细地址<i>*</i></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control check" id="street"
+                           placeholder="建议您如实填写收货地址。例如：XX省XX市XX区XX街道XX号XX房">
                 </div>
-                <div class="form-group">
-                    <label for="postcode" class="col-sm-2 control-label">邮政编码</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" id="postcode">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="receive" class="col-sm-2 control-label">收货人姓名<i>*</i></label>
-                    <div class="col-sm-10">
-                        <input class="form-control check" type="text" id="receive">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="phone" class="col-sm-2 control-label">联系方式<i>*</i></label>
-                    <div class="col-sm-10">
-                        <input class="form-control check" type="text" id="phone" placeholder="手机号码或电话号码">
-                    </div>
-                </div>
-            </form>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"><span>设置为默认收货地址</span>
-                </label>
             </div>
-            <button type="submit" class="btn" id="save"><strong>保存</strong></button>
-            <p><span class="text-danger">已保存2条地址</span></p>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th class="visible-xs">收货详细信息</th>
-                        <th class="hidden-xs">收货人</th>
-                        <th class="hidden-xs">收货地址</th>
-                        <th class="hidden-xs">邮编</th>
-                        <th class="hidden-xs">手机/电话</th>
-                        <th>操作</th>
-                        <th class="hidden-xs"></th>
-                    </tr>
-                </thead>
-                <tbody class="address">
-                    <tr>
-                        <td>
-                            <div>aaa</div>
-                            <div class="visible-xs">XX省XX市XX区XXX街道</div>
-                            <div class="visible-xs">13400000000</div>
-                            <div class="visible-xs text-danger">（默认地址）</div>
-                        </td>
-                        <td class="hidden-xs">XX省XX市XX区XXX街道</td>
-                        <td class="hidden-xs">000000</td>
-                        <td class="hidden-xs">13400000000</td>
-                        <td><a href="#">修改</a><a href="#">删除</a></td>
-                        <td class="hidden-xs"><button class="btn btn-danger" style="font-size: 6px">默认地址</button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>aaa</div>
-                            <div class="visible-xs">XX省XX市XX区XXX街道</div>
-                            <div class="visible-xs">13400000000</div>
-                        </td>
-                        <td class="hidden-xs">XX省XX市XX区XXX街道</td>
-                        <td class="hidden-xs">000000</td>
-                        <td class="hidden-xs">13400000000</td>
-                        <td><a href="#">修改</a><a href="#">删除</a></td>
-                        <td class="hidden-xs"></td>
-                    </tr>
-                </tbody>
-            </table>
-        <!--</div>-->
+            <div class="form-group">
+                <label for="postcode" class="col-sm-2 control-label">邮政编码</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="postcode">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="receive" class="col-sm-2 control-label">收货人姓名<i>*</i></label>
+                <div class="col-sm-10">
+                    <input class="form-control check" type="text" id="receive">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-sm-2 control-label">联系方式<i>*</i></label>
+                <div class="col-sm-10">
+                    <input class="form-control check" type="text" id="phone" placeholder="手机号码或电话号码">
+                </div>
+            </div>
+        </form>
+        <div class="checkbox col-sm-offset-1 col-sm-3">
+            <label>
+                <input type="checkbox"><span>设置为默认收货地址</span>
+            </label>
+        </div>
+        <a type="submit" class="btn col-sm-1 col-xs-offset-1" id="save"><strong>保存</strong></a>
+        <p class="col-sm-12 text-danger">已保存2条地址</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="visible-xs">收货详细信息</th>
+                    <th class="hidden-xs">收货人</th>
+                    <th class="hidden-xs">收货地址</th>
+                    <th class="hidden-xs">邮编</th>
+                    <th class="hidden-xs">手机/电话</th>
+                    <th>操作</th>
+                    <th class="hidden-xs"></th>
+                </tr>
+            </thead>
+            <tbody class="address">
+                <tr>
+                    <td>
+                        <div>aaa</div>
+                        <div class="visible-xs">XX省XX市XX区XXX街道</div>
+                        <div class="visible-xs">13400000000</div>
+                        <div class="visible-xs text-danger">（默认地址）</div>
+                    </td>
+                    <td class="hidden-xs">XX省XX市XX区XXX街道</td>
+                    <td class="hidden-xs">000000</td>
+                    <td class="hidden-xs">13400000000</td>
+                    <td><a href="#">修改</a><a href="#">删除</a></td>
+                    <td class="hidden-xs"><button class="btn btn-danger" style="font-size: 6px">默认地址</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>aaa</div>
+                        <div class="visible-xs">XX省XX市XX区XXX街道</div>
+                        <div class="visible-xs">13400000000</div>
+                    </td>
+                    <td class="hidden-xs">XX省XX市XX区XXX街道</td>
+                    <td class="hidden-xs">000000</td>
+                    <td class="hidden-xs">13400000000</td>
+                    <td><a href="#">修改</a><a href="#">删除</a></td>
+                    <td class="hidden-xs"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

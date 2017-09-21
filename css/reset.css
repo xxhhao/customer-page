@@ -80,6 +80,7 @@ input::-webkit-input-placeholder{
     font-size: 12px;
 }
 
-textarea::-webkit-input-placeholder{
-    font-size: 12px;
+input:focus::-webkit-input-placeholder{
+    text-indent: -999px;
+    z-index: -20;
 }

@@ -73,16 +73,11 @@
     margin-right: 20px;
 }
 
-.checkbox{
-    margin-left: 65px;
-}
-
 .checkbox span{
-    line-height: 22px;
+    line-height: 20px;
 }
 
 #save{
-    margin-left: 65px;
     margin-bottom: 30px;
     color: #fff;
     background-color: red;
@@ -161,6 +156,7 @@
 
 .order-item tfoot tr td div{
     margin: 10px 0 0 5px;
+    cursor: pointer;
 }
 
 .order-item tfoot tr td .eva{
