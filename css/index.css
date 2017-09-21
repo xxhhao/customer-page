@@ -77,6 +77,10 @@
     margin-left: 65px;
 }
 
+.checkbox span{
+    line-height: 22px;
+}
+
 #save{
     margin-left: 65px;
     margin-bottom: 30px;
@@ -96,10 +100,6 @@
 
 .form-horizontal .radio{
     padding-top: 2px;
-}
-
-.order{
-    margin-bottom: 35px;
 }
 
 .order-header ul{
@@ -144,6 +144,10 @@
     width: 150px;
 }
 
+.order-item tfoot{
+    background: #fff;
+}
+
 .order-item tfoot tr td span{
     position: relative;
     left: 5px;
@@ -181,3 +185,6 @@
     text-decoration: underline;
 }
 
+.address{
+    background: #fff;
+}
