@@ -38,6 +38,7 @@ img{
 body{
     background:#fff5f7;
     font-size: 11px;
+    /*font-family: Montserrat;*/
 }
 
 .content{
@@ -60,7 +61,7 @@ i{
 }
 
 thead{
-    background: #007593;
+    background: #d7c4bb;
     color: #fff;
 }
 
@@ -122,7 +123,7 @@ input:focus::-webkit-input-placeholder{
     }
 }
 
-    .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
     background: #007593;
 }
 
@@ -144,3 +145,13 @@ input:focus::-webkit-input-placeholder{
 .navbar-nav > li > .dropdown-menu{
     background: #0089a7;
 }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: #fff;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    color: #fff;
+    background: #007593;
+}
+
