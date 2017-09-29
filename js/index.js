@@ -1,6 +1,8 @@
 
+var vD=Object.create(validate);
 
 $(function(){
+
     $("#confirm").click(function(){
         name();
         realname();
@@ -34,7 +36,7 @@ $(function(){
 
     function name(){
         var ch1=$("#name");
-        if(ch1.val()==""){
+        if(vD.isEmpty(ch1.val())==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
@@ -131,3 +133,6 @@ $(function(){
             ch2.parent().removeClass("has-error")
         }
     }
+
+
+
