@@ -36,7 +36,7 @@ img{
 }
 
 body{
-    background: #e8e8e8;
+    background:#fff5f7;
     font-size: 11px;
 }
 
@@ -60,7 +60,7 @@ i{
 }
 
 thead{
-    background: #8994aa;
+    background: #007593;
     color: #fff;
 }
 
@@ -83,4 +83,56 @@ input::-webkit-input-placeholder{
 input:focus::-webkit-input-placeholder{
     text-indent: -999px;
     z-index: -20;
+}
+
+
+
+/*²âÊÔÑÕÉ«*/
+.navbar-default{
+    background: #0089a7;
+}
+
+.navbar-default .navbar-brand{
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    color: #fff;
+    background: #007593;
+}
+
+
+@media (max-width: 767px){
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus{
+        color: #fff;
+        background: #007593;
+    }}
+
+
+@media (max-width: 767px){
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+        color: #fff;
+    }
+}
+
+    .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background: #007593;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #007593;
 }
