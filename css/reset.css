@@ -47,8 +47,8 @@ body{
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover{
-    color: #000;
-    background-color: #e7e7e7;
+    color: #fff;
+    background: #007593;
 }
 
 i{
@@ -135,4 +135,12 @@ input:focus::-webkit-input-placeholder{
 .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
     background: #007593;
+}
+
+.dropdown-menu > li > a{
+    color:#fff;
+}
+
+.navbar-nav > li > .dropdown-menu{
+    background: #0089a7;
 }
