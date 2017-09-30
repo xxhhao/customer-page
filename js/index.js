@@ -79,40 +79,20 @@ $(function(){
                 }
     }
 
-    function email(){
-        var ch1=$("#email");
-        if(vD.isEmail(ch1.val())==false){
-            ch1.parent().addClass("has-error");
-            ch1.next()
-                .show()
-                .text("请填写正确的邮箱地址")
-        }
-        else{
-            ch1.parent().removeClass("has-error");
-            ch1.next().hide();
-        }
-    }
+    //function email(){
+    //    var ch1=$("#email");
+    //    if(vD.isEmail(ch1.val())==false){
+    //        ch1.parent().addClass("has-error");
+    //        ch1.next()
+    //            .show()
+    //            .text("请填写正确的邮箱地址")
+    //    }
+    //    else{
+    //        ch1.parent().removeClass("has-error");
+    //        ch1.next().hide();
+    //    }
+    //}
 
-    function passward(){
-        var ch1=$("#passward");
-        var p=vD.isPassward(ch1.val());
-        if(vD.isPassward(ch1.val())=="empty"){
-            ch1.parent().addClass("has-error");
-            ch1.next()
-                .show()
-                .text("不能为空");
-        }
-        else if(p=="short"){
-            ch1.parent().addClass("has-error");
-            ch1.next()
-                .show()
-                .text("密码太短");
-        }
-        else{
-            ch1.parent().removeClass("has-error");
-            ch1.next().hide();
-        }
-    }
 
     function receive(){
         var ch2=$("#receive");
@@ -152,3 +132,52 @@ $(function(){
 
 
 
+    function email(){
+        var ch1=$("#email");
+        var p=vD.isPassward(ch1.val());
+        if(vD.isPassward(ch1.val())=="empty"){
+            ch1.parent().addClass("has-error");
+            ch1.next()
+                .show()
+                .text("不能为空");
+            ch1.siblings(".ttt").children().hide();
+        }
+        else if(p=="short"){
+            ch1.parent().addClass("has-error");
+            ch1.next()
+                .show()
+                .text("密码太短");
+        }
+        else if(p=="simple"){
+            ch1.parent().removeClass("has-error");
+            ch1.next().hide();
+            ch1.siblings(".ttt").children("p:first-child")
+                .show()
+                .text("弱")
+                .css({
+                    "background":"orange",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"grey",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+            ch1.siblings(".ttt").children("p:nth-child(2)")
+                .show()
+                .text("中")
+                .css({
+                    "display":"inline-block",
+                    "background":"orange",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"grey",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+        }
+        else{
+            ch1.parent().removeClass("has-error");
+            ch1.next().hide();
+
+        }
+    }
