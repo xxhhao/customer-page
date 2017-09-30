@@ -36,11 +36,13 @@ $(function(){
 
     function name(){
         var ch1=$("#name");
-        if(vD.isEmpty(ch1.val())==false){
+        var empty=vD.isEmpty(ch1.val());
+        var nickname=vD.isNickname(ch1.val());
+        if(empty==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
-                .text("请输入用户名");
+                .text("请输入正确的用户名");
         }
         else{
             ch1.parent().removeClass("has-error");

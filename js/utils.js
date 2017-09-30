@@ -6,55 +6,55 @@
 var validate={
     isEmpty:function(x){
         if(x!==""){
-            return("true")
+            return true
         }
         else{
-            return("false")
+            return false
         }
     },
 
     isNumber:function(x){
         if(x.match(/^\d+$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isLetter: function (x) {
         if(x.match(/^[A-Za-z]+$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isTelephone:function(x){
         if(x.match(/^1[3-5|8]\d{9}$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isEmail:function(x){
         if(x.match(/^[A-Za-z0-9_-]+@[A-Za-z0-9_-]+(\.[A-Za-z]{2,3}){1,2}$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isChinese:function(x){
         if(x.match(/^[\u4e00-\u9fa5]$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
@@ -96,19 +96,19 @@ var validate={
 
     isNickname:function(x){
         if(x.match(/^\w{3,20}$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isMoney:function(x){
         if(x.match(/^\d*\.\d{2}$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
@@ -118,24 +118,24 @@ var validate={
             var b= parseInt(x.slice(11,12));
             var c= parseInt(x.slice(13,14));
             if(a<2100 && b<13 && c<32){
-                alert("true")
+                return true
             }
             else{
-                alert("false")
+                return false
             }
         }
 
         else{
-            alert("false")
+            return false
         }
     },
 
     isUrl:function(x){
         if(x.match(/^https:\/\/www\.[a-z0-9_-]+(\.[a-z]{2,3}){1,2}(\/[a-z0-9_-]+)*$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
@@ -146,14 +146,14 @@ var validate={
             var b=parseInt(dateArray[1]);
             var c=parseInt(dateArray[2]);
             if(a<2100 && b<13 && c<32){
-                alert("true")
+                return true
             }
             else{
-                alert("false")
+                return false
             }
         }
         else{
-            alert("false")
+            return false
         }
     },
 
@@ -164,41 +164,41 @@ var validate={
             var b=parseInt(timeArray[1]);
             var c=parseInt(timeArray[2]);
             if(a<25 && b<61 &&c<61){
-                alert("true")
+                return true
             }
             else{
-                alert("false")
+                return false
             }
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isInt:function(x){
         if(x.match(/^[1-9][0-9]*$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isPost:function(x){
         if(x.match(/^\d{6}$/)){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
     isLength:function(x){
         if(x.length>=6){
-            alert("true")
+            return true
         }
         else{
-            alert("false")
+            return false
         }
     }
 };
