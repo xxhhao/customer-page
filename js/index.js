@@ -138,18 +138,18 @@ $(function(){
     function email(){
         var ch1=$("#email");
         var p=vD.isPassword(ch1.val());
-        if(vD.isPassword(ch1.val())=="empty"){
+        if(p=="empty"){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
-                .text("不能为空");
+                .text("请正确填写密码");
             ch1.siblings(".ttt").children().hide();
         }
         else if(p=="short"){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
-                .text("密码太短");
+                .text("密码长度太短");
             ch1.siblings(".ttt").children().hide();
         }
         else if(p=="simple"){
