@@ -55,7 +55,7 @@ $(function(){
 
     function realname(){
         var ch1=$("#realname");
-        if(vD.isChinese(ch1.val())==false ||vD.isLength(ch1.val())==false){
+        if(vD.isChinese(ch1.val())==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
@@ -149,7 +149,7 @@ $(function(){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
-                .text("密码长度太短");
+                .text("密码长度范围需在6位到20位");
             ch1.siblings(".ttt").children().hide();
         }
         else if(p=="simple"){
@@ -181,7 +181,7 @@ $(function(){
                 });
             ch1.siblings(".ttt").children("div:nth-child(3)")
                 .show()
-                .text("高")
+                .text("强")
                 .css({
                     "display":"inline-block",
                     "background":"grey",
@@ -221,7 +221,7 @@ $(function(){
                 });
             ch1.siblings(".ttt").children("div:nth-child(3)")
                 .show()
-                .text("高")
+                .text("强")
                 .css({
                     "display":"inline-block",
                     "background":"grey",
@@ -261,7 +261,7 @@ $(function(){
                 });
             ch1.siblings(".ttt").children("div:nth-child(3)")
                 .show()
-                .text("高")
+                .text("强")
                 .css({
                     "display":"inline-block",
                     "background":"green",
