@@ -50,7 +50,7 @@ var validate={
     },
 
     isChinese:function(x){
-        if(x.match(/^[\u4e00-\u9fa5]$/)){
+        if(x.match(/^[\u4e00-\u9fa5]+$/)){
             return true
         }
         else{
@@ -60,10 +60,10 @@ var validate={
 
     isPassward:function(x){
         if(x==""){
-            alert("empty")
+            return("empty")
         }
         else if(x.length<6|| x.length>20){
-            alert("short")
+            return("short")
         }
         else{
             var a=0;
@@ -83,13 +83,13 @@ var validate={
 
             var num=a+b+c;
             if(num==1){
-                alert("simple")
+                return("simple")
             }
             else if(num==2){
-                alert("normal")
+                return("normal")
             }
             else{
-                alert("good")
+                return("good")
             }
         }
     },
@@ -189,7 +189,7 @@ var validate={
             return true
         }
         else{
-            return false
+            alert("false")
         }
     },
 
@@ -198,7 +198,7 @@ var validate={
             return true
         }
         else{
-            return false
+            alert("false")
         }
     }
 };

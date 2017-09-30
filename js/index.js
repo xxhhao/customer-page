@@ -1,6 +1,7 @@
 
 var vD=Object.create(validate);
 
+
 $(function(){
 
     $("#confirm").click(function(){
@@ -36,9 +37,7 @@ $(function(){
 
     function name(){
         var ch1=$("#name");
-        var empty=vD.isEmpty(ch1.val());
-        var nickname=vD.isNickname(ch1.val());
-        if(empty==false){
+        if(vD.isEmpty(ch1.val())==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
@@ -53,17 +52,11 @@ $(function(){
 
     function realname(){
         var ch1=$("#realname");
-        if(ch1.val()==""){
+        if(vD.isChinese(ch1.val())==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
                 .text("请输入姓名");
-        }
-        else if(ch1.val().length>6){
-            ch1.parent().addClass("has-error");
-            ch1.next()
-                .show()
-                .text("不能超过6个字");
         }
         else{
             ch1.parent().removeClass("has-error");
@@ -74,7 +67,7 @@ $(function(){
 
     function telphone(){
         var ch1=$("#telphone");
-        if(ch1.val()==""||ch1.val().length!=11){
+        if(vD.isTelephone(ch1.val())==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
@@ -88,11 +81,18 @@ $(function(){
 
     function email(){
         var ch1=$("#email");
-        if(ch1.val()==""||!ch1.val().match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/)){
+        var p=vD.isPassward(ch1.val());
+        if(vD.isPassward(ch1.val())=="empty"){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
-                .text("请输入正确的邮箱地址");
+                .text("不能为空");
+        }
+        else if(p=="short"){
+            ch1.parent().addClass("has-error");
+            ch1.next()
+                .show()
+                .text("密码太短");
         }
         else{
             ch1.parent().removeClass("has-error");
