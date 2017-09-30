@@ -142,7 +142,7 @@ $(function(){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
-                .text("请正确填写密码");
+                .text("密码不能为空");
             ch1.siblings(".ttt").children().hide();
         }
         else if(p=="short"){
@@ -160,10 +160,10 @@ $(function(){
                 .text("弱")
                 .css({
                     "display":"inline-block",
-                    "background":"red",
+                    "background":"#e05038",
                     "width":"32px",
                     "height":"6px",
-                    "color":"red",
+                    "color":"#e05038",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -175,7 +175,7 @@ $(function(){
                     "background":"grey",
                     "width":"32px",
                     "height":"6px",
-                    "color":"white",
+                    "color":"#fff",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -187,7 +187,7 @@ $(function(){
                     "background":"grey",
                     "width":"32px",
                     "height":"6px",
-                    "color":"white",
+                    "color":"#fff",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -200,10 +200,10 @@ $(function(){
                 .text("弱")
                 .css({
                     "display":"inline-block",
-                    "background":"red",
+                    "background":"#e05038",
                     "width":"32px",
                     "height":"6px",
-                    "color":"white",
+                    "color":"#fff",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -212,10 +212,10 @@ $(function(){
                 .text("中")
                 .css({
                     "display":"inline-block",
-                    "background":"orange",
+                    "background":"#e6af4b",
                     "width":"32px",
                     "height":"6px",
-                    "color":"orange",
+                    "color":"#e6af4b",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -227,7 +227,7 @@ $(function(){
                     "background":"grey",
                     "width":"32px",
                     "height":"6px",
-                    "color":"white",
+                    "color":"#fff",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -240,10 +240,10 @@ $(function(){
                 .text("弱")
                 .css({
                     "display":"inline-block",
-                    "background":"red",
+                    "background":"#e05038",
                     "width":"32px",
                     "height":"6px",
-                    "color":"white",
+                    "color":"#fff",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -252,10 +252,10 @@ $(function(){
                 .text("中")
                 .css({
                     "display":"inline-block",
-                    "background":"orange",
+                    "background":"#e6af4b",
                     "width":"32px",
                     "height":"6px",
-                    "color":"white",
+                    "color":"#fff",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
@@ -264,10 +264,10 @@ $(function(){
                 .text("强")
                 .css({
                     "display":"inline-block",
-                    "background":"green",
+                    "background":"#3fb0ac",
                     "width":"32px",
                     "height":"6px",
-                    "color":"green",
+                    "color":"#3fb0ac",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
