@@ -10,6 +10,9 @@ $(function(){
         telphone();
         email();
         check();
+        $("#email").keyup(function(){
+            email();
+        })
     });
 
     $("#save").click(function(){
@@ -134,8 +137,8 @@ $(function(){
 
     function email(){
         var ch1=$("#email");
-        var p=vD.isPassward(ch1.val());
-        if(vD.isPassward(ch1.val())=="empty"){
+        var p=vD.isPassword(ch1.val());
+        if(vD.isPassword(ch1.val())=="empty"){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
@@ -147,22 +150,64 @@ $(function(){
             ch1.next()
                 .show()
                 .text("密码太短");
+            ch1.siblings(".ttt").children().hide();
         }
         else if(p=="simple"){
             ch1.parent().removeClass("has-error");
             ch1.next().hide();
-            ch1.siblings(".ttt").children("p:first-child")
+            ch1.siblings(".ttt").children("div:first-child")
                 .show()
                 .text("弱")
                 .css({
-                    "background":"orange",
+                    "display":"inline-block",
+                    "background":"red",
                     "width":"32px",
                     "height":"6px",
-                    "color":"grey",
+                    "color":"red",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });
-            ch1.siblings(".ttt").children("p:nth-child(2)")
+            ch1.siblings(".ttt").children("div:nth-child(2)")
+                .show()
+                .text("中")
+                .css({
+                    "display":"inline-block",
+                    "background":"grey",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"white",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+            ch1.siblings(".ttt").children("div:nth-child(3)")
+                .show()
+                .text("高")
+                .css({
+                    "display":"inline-block",
+                    "background":"grey",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"white",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+        }
+        else if(p=="normal"){
+            ch1.parent().removeClass("has-error");
+            ch1.next().hide();
+            ch1.siblings(".ttt").children("div:first-child")
+                .show()
+                .text("弱")
+                .css({
+                    "display":"inline-block",
+                    "background":"red",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"white",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+            ch1.siblings(".ttt").children("div:nth-child(2)")
                 .show()
                 .text("中")
                 .css({
@@ -170,7 +215,59 @@ $(function(){
                     "background":"orange",
                     "width":"32px",
                     "height":"6px",
-                    "color":"grey",
+                    "color":"orange",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+            ch1.siblings(".ttt").children("div:nth-child(3)")
+                .show()
+                .text("高")
+                .css({
+                    "display":"inline-block",
+                    "background":"grey",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"white",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+        }
+        else if(p=="good"){
+            ch1.parent().removeClass("has-error");
+            ch1.next().hide();
+            ch1.siblings(".ttt").children("div:first-child")
+                .show()
+                .text("弱")
+                .css({
+                    "display":"inline-block",
+                    "background":"red",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"white",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+            ch1.siblings(".ttt").children("div:nth-child(2)")
+                .show()
+                .text("中")
+                .css({
+                    "display":"inline-block",
+                    "background":"orange",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"white",
+                    "line-height":"30px",
+                    "padding-left":"10px"
+                });
+            ch1.siblings(".ttt").children("div:nth-child(3)")
+                .show()
+                .text("高")
+                .css({
+                    "display":"inline-block",
+                    "background":"green",
+                    "width":"32px",
+                    "height":"6px",
+                    "color":"green",
                     "line-height":"30px",
                     "padding-left":"10px"
                 });

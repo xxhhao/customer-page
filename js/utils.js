@@ -58,7 +58,7 @@ var validate={
         }
     },
 
-    isPassward:function(x){
+    isPassword:function(x){
         if(x==""){
             return("empty")
         }
