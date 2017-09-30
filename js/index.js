@@ -52,7 +52,7 @@ $(function(){
 
     function realname(){
         var ch1=$("#realname");
-        if(vD.isChinese(ch1.val())==false){
+        if(vD.isChinese(ch1.val())==false ||vD.isLength(ch1.val())==false){
             ch1.parent().addClass("has-error");
             ch1.next()
                 .show()
@@ -81,6 +81,20 @@ $(function(){
 
     function email(){
         var ch1=$("#email");
+        if(vD.isEmail(ch1.val())==false){
+            ch1.parent().addClass("has-error");
+            ch1.next()
+                .show()
+                .text("请填写正确的邮箱地址")
+        }
+        else{
+            ch1.parent().removeClass("has-error");
+            ch1.next().hide();
+        }
+    }
+
+    function passward(){
+        var ch1=$("#passward");
         var p=vD.isPassward(ch1.val());
         if(vD.isPassward(ch1.val())=="empty"){
             ch1.parent().addClass("has-error");

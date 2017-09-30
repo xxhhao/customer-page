@@ -189,7 +189,7 @@ var validate={
             return true
         }
         else{
-            alert("false")
+            return false
         }
     },
 
@@ -198,7 +198,7 @@ var validate={
             return true
         }
         else{
-            alert("false")
+            return false
         }
     }
 };
